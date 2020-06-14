@@ -30,7 +30,7 @@ var routes = require('./restapi/routes/customer');
 routes(app);
 
 app.use(async (req, res) => {
-	//Access to customers collection.
+	//Access to book collection.
 	res.status(404).send({url: req.originalUrl + ' not found'});
 
 })
